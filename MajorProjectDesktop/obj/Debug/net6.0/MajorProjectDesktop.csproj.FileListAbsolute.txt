@@ -1,0 +1,15 @@
+C:\Users\Joe mama\Downloads\MajorProjectDesktop-master\MajorProjectDesktop-master\MajorProjectDesktop\obj\Debug\net6.0\MajorProjectDesktop.csproj.AssemblyReference.cache
+C:\Users\Joe mama\Downloads\MajorProjectDesktop-master\MajorProjectDesktop-master\MajorProjectDesktop\obj\Debug\net6.0\MajorProjectDesktop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joe mama\Downloads\MajorProjectDesktop-master\MajorProjectDesktop-master\MajorProjectDesktop\obj\Debug\net6.0\MajorProjectDesktop.AssemblyInfoInputs.cache
+C:\Users\Joe mama\Downloads\MajorProjectDesktop-master\MajorProjectDesktop-master\MajorProjectDesktop\obj\Debug\net6.0\MajorProjectDesktop.AssemblyInfo.cs
+C:\Users\Joe mama\Downloads\MajorProjectDesktop-master\MajorProjectDesktop-master\MajorProjectDesktop\obj\Debug\net6.0\MajorProjectDesktop.csproj.CoreCompileInputs.cache
+C:\Users\Joe mama\Downloads\MajorProjectDesktop-master\MajorProjectDesktop-master\MajorProjectDesktop\bin\Debug\net6.0\MajorProjectDesktop.exe
+C:\Users\Joe mama\Downloads\MajorProjectDesktop-master\MajorProjectDesktop-master\MajorProjectDesktop\bin\Debug\net6.0\MajorProjectDesktop.deps.json
+C:\Users\Joe mama\Downloads\MajorProjectDesktop-master\MajorProjectDesktop-master\MajorProjectDesktop\bin\Debug\net6.0\MajorProjectDesktop.runtimeconfig.json
+C:\Users\Joe mama\Downloads\MajorProjectDesktop-master\MajorProjectDesktop-master\MajorProjectDesktop\bin\Debug\net6.0\MajorProjectDesktop.dll
+C:\Users\Joe mama\Downloads\MajorProjectDesktop-master\MajorProjectDesktop-master\MajorProjectDesktop\bin\Debug\net6.0\ref\MajorProjectDesktop.dll
+C:\Users\Joe mama\Downloads\MajorProjectDesktop-master\MajorProjectDesktop-master\MajorProjectDesktop\bin\Debug\net6.0\MajorProjectDesktop.pdb
+C:\Users\Joe mama\Downloads\MajorProjectDesktop-master\MajorProjectDesktop-master\MajorProjectDesktop\obj\Debug\net6.0\MajorProjectDesktop.dll
+C:\Users\Joe mama\Downloads\MajorProjectDesktop-master\MajorProjectDesktop-master\MajorProjectDesktop\obj\Debug\net6.0\ref\MajorProjectDesktop.dll
+C:\Users\Joe mama\Downloads\MajorProjectDesktop-master\MajorProjectDesktop-master\MajorProjectDesktop\obj\Debug\net6.0\MajorProjectDesktop.pdb
+C:\Users\Joe mama\Downloads\MajorProjectDesktop-master\MajorProjectDesktop-master\MajorProjectDesktop\obj\Debug\net6.0\MajorProjectDesktop.genruntimeconfig.cache
