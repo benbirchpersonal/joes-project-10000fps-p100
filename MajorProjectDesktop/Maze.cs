@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -70,12 +70,19 @@ namespace MajorProjectDesktop
             while (CellsVisited < CellCount)
             {
                 CurrentLocation[0] = start[0]; CurrentLocation[1] = start[1];
-                Nextcell(CurrentLocation[0], CurrentLocation[1]);
+                const int stacksize = 100000000;
+                Thread thd = new Thread(new ParameterizedThreadStart(Nextcell), stacksize);
+                thd.Start(CurrentLocation);
+                thd.Join();
+                //Nextcell(CurrentLocation[0], CurrentLocation[1]);
             }
         }
-
-        public void Nextcell(int x, int y)
+        
+        public void Nextcell(object xy)
         {
+            int[] xyy = xy as int[];
+            int x = xyy[0];
+            int y = xyy[1];
             CellList[x, y].Visited = true;
             CellsVisited++;
             //Render(Height, Width);
@@ -86,31 +93,33 @@ namespace MajorProjectDesktop
                 Around.Clear();
                 Around = CellList[x, y].neighbours(CellList); //Finds unvisited cells around itself
                 Choice = rnd.Next(CellList[x, y].Around.Count());
-
+                if (Around.Count() == 0)
+                    break;
                 switch (CellList[x, y].Around[Choice])
                 {
                     case 'N':
                         //Console.WriteLine("N");
                         CellList[x, y - 1].Walls[1] = false; //Breaks south wall of cell above
-                        Nextcell(x, y - 1);
+                        //Nextcell(x, y - 1);
+                        Nextcell(new int[] {x,y-1});
                         break;
 
                     case 'E':
                         //Console.WriteLine("E");
                         CellList[x, y].Walls[0] = false; //Breaks east wall of current cell
-                        Nextcell(x + 1, y);
+                        Nextcell(new int[] { x  + 1, y });
                         break;
 
                     case 'S':
                         //Console.WriteLine("S");
                         CellList[x, y].Walls[1] = false; //Breaks south wall of current cell
-                        Nextcell(x, y + 1);
+                        Nextcell(new int[] { x, y+1});
                         break;
 
                     case 'W':
                         //Console.WriteLine("W");
                         CellList[x - 1, y].Walls[0] = false; //Breaks west wall of cell to the right
-                        Nextcell(x - 1, y);
+                        Nextcell(new int[] { x -1, y });
                         break;
 
                     case 'Q':
@@ -159,6 +168,7 @@ namespace MajorProjectDesktop
                             }
                         }
                         //Console.WriteLine();
+                        //_renderer.BufferNextLine();
                     }
                     _renderer.BufferNextLine();
                 }
