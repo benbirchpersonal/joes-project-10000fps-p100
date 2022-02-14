@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -43,12 +43,14 @@ namespace MajorProjectDesktop
 			buffer.Clear();
 		}
 		public void AddColoredCellToBuffer(string bgCol){
+            //stdout.WriteAsync(Encoding.ASCII.GetBytes(bgCol + ' '));
 			buffer.Append(bgCol + ' ');
 		}
 
 		public void BufferNextLine()
 		{
-			buffer.Append("\u001b[40m\n");
+            //stdout.WriteAsync(Encoding.ASCII.GetBytes("\u001b[40m\n"));
+            buffer.Append("\u001b[40m\n");
 
                 }
         public void drawBuffer() {
